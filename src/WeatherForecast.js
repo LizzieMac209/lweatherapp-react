@@ -21,6 +21,7 @@ function load (){
 }
 
 if (loaded) {
+  if (Array.isArray(forecast)) {
   return (
     <div className="WeatherForecast">
       <div className="row">
@@ -40,5 +41,6 @@ if (loaded) {
   );
 } else {
   load();
+}
 }
 }

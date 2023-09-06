@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ForecastDay (props){
+export default function ForecastDay(props) {
   let date = new Date(props.data.time * 1000);
   function maxTemperature() {
     let maxTemp = Math.round(props.data.temperature.maximum);

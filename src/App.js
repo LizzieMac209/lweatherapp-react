@@ -1,19 +1,35 @@
-import React from "react";
+import "./App.css";
 import Weather from "./Weather";
 
-import './App.css';
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <h1>
-        This is the Main Entry Point Weather App
-       </h1>
-       <Weather />
-      </header>
-    </div>
+      <div className="container">
+        <Weather defaultCity="San Diego" />
+      <footer className="mt-1">
+        🪷 This website was coded by {" "}
+        <a 
+        href="https://www.linkedin.com/in/elizabeth-macfarlane/"
+        target="_blank"
+        rel="noreferrer"
+        title="Lizzie Macfarlane LinkedIn"
+        >
+          Lizzie Macfarlane
+        </a> {" "}
+        and is {" "}
+        <a 
+        href= "https://github.com/LizzieMac209/lweatherapp-react"
+        target="_blank"
+        rel="noreferrer"
+        title="Source code on GitHub"
+        >
+          <strong>open-sourced</strong>
+        </a>
+      </footer>
+      </div>
+      </div>
   );
 }
-
-export default App;
+ 

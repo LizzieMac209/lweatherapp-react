@@ -55,7 +55,6 @@ onChange={handleCity}
       </form>
       <WeatherInfo data={weatherData} />
       <WeatherForecast city={weatherData.city} />
-      <h2>Hello from Weather js</h2>
     </div>
   );
 } else {
