@@ -1,69 +1,66 @@
 .Weather {
-  border: 1px solid #dadce0;
-  border-radius: 5px;
-  color: #878787;
-  margin-top: 20px;
-  padding: 10px;
-}
-.Weather li {
-  list-style-type: none;
-  line-height: 1.25;
-}
-.Weather .current-temp-icon {
-  width: 90px;
-  position: relative;
-  bottom: 12px;
-}
-.Weather .temperature {
-  font-size: 64px;
-  color: #212121;
-  line-height: 64px;
-}
-.Weather .unit {
-  color: #212121;
-  position: relative;
-  bottom: 28px;
-  left: 1px;
-  font-size: 23px;
-}
-
-@media (max-width: 600px) {
-  .Weather .time-date-conditions {
-    padding-left: 20px;
-    font-size: 15px;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    color: #878787;
+    margin-top: 20px;
+    padding: 10px;
   }
-  .Weather .current-weather {
-    display: flex;
-    position: relative;
-    padding: 0;
-    right: 5px;
-    top: 10px;
+  .Weather li {
+    list-style-type: none;
+    line-height: 1.25;
   }
   .Weather .current-temp-icon {
-    height: 90px;
+    width: 90px;
+    position: relative;
+    bottom: 12px;
   }
   .Weather .temperature {
-    position: relative;
-    right: 5px;
-    font-size: 55px;
+    font-size: 64px;
+    color: #212121;
+    line-height: 64px;
   }
   .Weather .unit {
+    color: #212121;
     position: relative;
-    top: 3px;
-    left: -2px;
+    bottom: 28px;
+    left: 1px;
+    font-size: 23px;
   }
-  .Weather .current-info {
-    font-size: 15px;
-    position: relative;
-    top: 14px;
-    padding: 0;
+  
+  @media (max-width: 600px) {
+    .Weather .time-date-conditions {
+      padding-left: 20px;
+      font-size: 15px;
+    }
+    .Weather .current-weather {
+      display: flex;
+      position: relative;
+      padding: 0;
+      right: 5px;
+      top: 10px;
+    }
+    .Weather .current-temp-icon {
+      height: 90px;
+    }
+    .Weather .temperature {
+      position: relative;
+      right: 5px;
+      font-size: 55px;
+    }
+    .Weather .unit {
+      position: relative;
+      top: 3px;
+      left: -2px;
+    }
+    .Weather .current-info {
+      font-size: 15px;
+      position: relative;
+      top: 14px;
+      padding: 0;
+    }
+    .Weather .forecast {
+      margin-top: 10px;
+      font-size: 15px;
+    }
   }
-  .Weather .forecast {
-    margin-top: 10px;
-    font-size: 15px;
-  }
-  .weather .btn {
-    margin: 70px;
-  }
-}
 
