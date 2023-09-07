@@ -38,7 +38,7 @@ function handleCity(event) {
 }
 if (weatherData.ready) {
   return (
-    <div classnName="Weather">
+    <div className="Weather WeatherInfo">
       <form onSubmit={handleSubmit}>
         <div className="row m-2">
           <div className="col-9 p-0">
