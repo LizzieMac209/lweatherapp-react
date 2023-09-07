@@ -1,4 +1,5 @@
 import React from "react";
+import "./ForecastDay.css";
 
 export default function ForecastDay(props) {
   let date = new Date(props.data.time * 1000);
@@ -11,7 +12,7 @@ export default function ForecastDay(props) {
     return `${minTemp}°`;
   }
   function day() {
-    let days = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     let day = date.getDay();
     return days[day];
   }
@@ -32,14 +33,14 @@ export default function ForecastDay(props) {
       <div className="forecast-date">{monthDay()}</div>
       <div>
         <img
-        src={props.data.condition.icon_url}
-alt= {props.data.condition.description}
-/>
-        </div>
-        <div>
-          <span className="forecast-temp-max">{maxTemperature()}</span>
+          src={props.data.condition.icon_url}
+          alt={props.data.condition.description}
+        />
+      </div>
+      <div>
+        <span className="forecast-temp-max">{maxTemperature()}</span>
         <span className="forecast-temp-min">{minTemperature()}</span>
-        </div>
+      </div>
     </div>
   );
 }

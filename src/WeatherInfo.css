@@ -1,0 +1,66 @@
+.WeatherInfo li{
+list-style-type: none;
+  line-height: 1.25;
+  }
+
+  .WeatherInfo {
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  color: #878787;
+  margin-top: 20px;
+  padding: 10px;
+}
+.WeatherInfo .current-temp-icon {
+  width: 90px;
+  position: relative;
+  bottom: 12px;
+}
+.WeatherInfo .temperature {
+  font-size: 62px;
+  color: #878787;
+  line-height: 64px;
+}
+
+.WeatherInfo .unit {
+  color: #878787;
+  position: relative;
+  bottom: 28px;
+  left: 1px;
+  font-size: 23px;
+}
+@media (max-width: 600px) {
+  .WeatherInfo .time-date-conditions {
+    padding-left: 20px;
+    font-size: 15px;
+  }
+  .WeatherInfo .current-weather {
+    display: flex;
+    position: relative;
+    padding: 0;
+    right: 5px;
+    top: 10px;
+  }
+  .WeatherInfo .current-temp-icon {
+    height: 90px;
+  }
+  .WeatherInfo .temperature {
+    position: relative;
+    right: 5px;
+    font-size: 55px;
+  }
+  .WeatherInfo .unit {
+    position: relative;
+    top: 3px;
+    left: -2px;
+  }
+  .WeatherInfo .current-info {
+    font-size: 15px;
+    position: relative;
+    top: 14px;
+    padding: 0;
+  }
+  .WeatherInfo .forecast {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,32 @@
+.ForecastDay {
+    text-align: center;
+  }
+  .ForecastDay .forecast-temp-min {
+    opacity: 0.7;
+    margin-left: 6px;
+  }
+  .ForecastDay img {
+    width: 70px;
+  }
+  .ForecastDay .forecast-date {
+    font-size: 12px;
+  }
+  @media (max-width: 600px) {
+    .ForecastDay .day {
+      position: relative;
+      top: 9px;
+    }
+    .ForecastDay .forecast-date {
+      font-size: 11px;
+      position: relative;
+      top: 9px;
+    }
+    .ForecastDay img {
+      width: 65px;
+    }
+    .ForecastDay .forecast-temp-max,
+    .ForecastDay .forecast-temp-min {
+      position: relative;
+      bottom: 4px;
+    }
+  }
