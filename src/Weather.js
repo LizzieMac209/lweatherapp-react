@@ -15,6 +15,7 @@ export default function Weather(props){
       city: response.data.city,
       date: new Date(response.data.time * 1000),
       temperature:response.data.temperature.current,
+      coordinates: response.data.coordinates,
       humidity: response.data.temperature.humidity,
       conditions: response.data.condition.description,
       feelsLike: response.data.temperature.feels_like,
@@ -38,23 +39,24 @@ if (weatherData.ready) {
   return (
     <div classnName="Weather">
       <form onSubmit={handleSubmit}>
-<div className="row m-2">
-<div className="col-9 p-0">
-<input
-type="search"
-placeholder="Enter city..."
-autoFocus
-className="form-control"
-onChange={handleCity}
-/>
-</div>
-<div classnName="col-3 pe-0">
-  <input type="submit" value="Search" className="btn btn-primary" />
-</div>
-</div>
+        <div className="row m-2">
+          <div className="col-9 p-0">
+            <input
+              type="search"
+              placeholder="Enter city..."
+              autoFocus
+              className="form-control"
+              onChange={handleCity}
+            />
+          </div>
+          <div classnName="col-3 pe-0">
+            <input type="submit" value="Search" className="btn btn-primary" />
+          </div>
+        </div>
       </form>
       <WeatherInfo data={weatherData} />
-      <WeatherForecast city={weatherData.city} />
+      <WeatherForecast coordinates={weatherData.coordinates} />
+     
     </div>
   );
 } else {
