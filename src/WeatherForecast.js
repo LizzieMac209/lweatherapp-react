@@ -14,7 +14,7 @@ export default function WeatherForecast(props) {
     setLoaded(true);
     setForecast(response.data.daily);
   }
-  
+
   function load() {
     const apiKey = "23f35a041todc2b80f91930b959fa171";
     const apiForecastUrl = `https://api.shecodes.io/weather/v1/current?query=${props.city}&key=${apiKey}&units=metric`;
@@ -22,6 +22,7 @@ export default function WeatherForecast(props) {
   }
 
   if (loaded) {
+    if (Array.isArray(forecast)) {
     return (
       <div className="WeatherForecast">
         <div className="row">
@@ -42,4 +43,5 @@ export default function WeatherForecast(props) {
   } else {
     load();
   }
+}
 }
