@@ -1,13 +1,25 @@
 .Weather {
     border: 1px solid #dadce0;
     border-radius: 5px;
+    font-family:Sans, arial,sans-serif;
     color: #878787;
-    margin-top: 20px;
-    padding: 10px;
+    padding: 18px;
+  }
+  .Weather h1{
+    font-weight: 400px;
+    font-size: 46px;
+    margin:20px 0 0 0;
+    
+  }
+  .Weather ul {
+    font-size: 16px;
+    margin:0;
+   padding:17px;
   }
   .Weather li {
     list-style-type: none;
-    line-height: 1.25;
+    
+    text-align: left;
   }
   .Weather .current-temp-icon {
     width: 90px;
@@ -15,7 +27,7 @@
     bottom: 12px;
   }
   .Weather .temperature {
-    font-size: 64px;
+    font-size: 62px;
     color: #212121;
     line-height: 64px;
   }

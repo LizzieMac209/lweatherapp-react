@@ -2,20 +2,21 @@
     border: 1px solid #dadce0;
     border-radius: 5px;
     color: #878787;
-    margin-top: 20px;
-    padding: 10px;
+    margin: 8px;
+    padding: 14px;
   }
   .WeatherInfo li {
     list-style-type: none;
     line-height: 1.25;
+    text-align: left;
   }
   .WeatherInfo .current-temp-icon {
-    width: 90px;
+    width: 100px;
     position: relative;
     bottom: 12px;
   }
   .WeatherInfo .temperature {
-    font-size: 64px;
+    font-size: 62px;
     color: #212121;
     line-height: 64px;
   }
@@ -24,7 +25,7 @@
     position: relative;
     bottom: 28px;
     left: 1px;
-    font-size: 23px;
+    font-size: 18px;
   }
   
   @media (max-width: 600px) {
