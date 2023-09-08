@@ -25,16 +25,17 @@ export default function App() {
             rel="noreferrer"
             title="Source code on GitHub"
           >
-            <strong>open-sourced</strong>
-          </a>
-          {" "}& hosted on {" "}
+            open-sourced on GitHub
+          </a>{" "}
+          &
           <a
             href="https://luxury-jelly-7fb793.netlify.app/"
             target="_blank"
             rel="noreferrer"
             title="Netlify"
           >
-            <strong>Netlify</strong>
+            {" "}
+             hosted on Netlify
           </a>
         </footer>
       </div>
