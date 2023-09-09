@@ -17,7 +17,7 @@ export default function ForecastDay(props) {
     return days[day];
   }
   function monthDay() {
-    let month = date.getMonth();
+    let month = date.getMonth() + 1;
     if (month < 10) {
       month = `0${month}`;
     }
